@@ -12,14 +12,15 @@ const fExp = (valor) => {
 const FirstApp = () => {
     //const newMessage = 'Nuevo Mensaje!';
     
-  return (
-    <>
-        <h1>{ fExp(3) }</h1>
-        <code>{JSON.stringify(newMessage)}</code>
-        {/* <code>{JSON.stringify(newMessage)}</code> */}
-        <p>Subtitulo</p>
-    </>
-  )
+
+    return (
+        <>
+            <h1>{ fExp(3) }</h1>
+            <code>{JSON.stringify(newMessage)}</code>
+            {/* <code>{JSON.stringify(newMessage)}</code> */}
+            <p>Subtitulo</p>
+        </>
+    )
 }
 
 export default FirstApp;
