@@ -9,16 +9,16 @@ const fExp = (valor) => {
     return valor*valor;
 }
 
-const FirstApp = () => {
+const FirstApp = ({title,subtitle}) => {
     //const newMessage = 'Nuevo Mensaje!';
-    
+    console.log(title);
 
     return (
         <>
-            <h1>{ fExp(3) }</h1>
+            <h1>{title}{ fExp(3) }</h1>
             <code>{JSON.stringify(newMessage)}</code>
             {/* <code>{JSON.stringify(newMessage)}</code> */}
-            <p>Subtitulo</p>
+            <p>{subtitle+1}</p>
         </>
     )
 }
