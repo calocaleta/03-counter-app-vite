@@ -8,7 +8,8 @@ describe('Pruebas en 11-async-await.js', () => {
         const url = await getImagen();
         console.log(url);
 
-        expect(typeof url).toBe('string');
+        //expect(typeof url).toBe('string');
+        expect(url).toBe('No se encontró la imagen');
 
     });
     
