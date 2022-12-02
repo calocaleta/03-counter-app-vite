@@ -6,8 +6,19 @@ describe('Pruebas en <FirstApp />', () => {
     
     test('Debe de hacer match con el snapshot',() => {
         
-        const title = 'Hola, Soy Gokú';
-        render( <FirstApp title={title} /> );
+        const title = 'Hola, Soy Goku';
+        const {container} = render( <FirstApp title={title} /> );
+
+        expect(container).toMatchSnapshot();
+
+    });
+
+    test('Debe de mostrar el título en un h1',() => {
+
+        const title = 'Hola, Soy Goku';
+        const {container} = render( <FirstApp title={title} /> );
+
+        expect(container).toMatchSnapshot();
 
     });
 
