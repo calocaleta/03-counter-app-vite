@@ -16,9 +16,13 @@ describe('Pruebas en <FirstApp />', () => {
     test('Debe de mostrar el título en un h1',() => {
 
         const title = 'Hola, Soy Goku';
-        const {container} = render( <FirstApp title={title} /> );
+        const {container, getByText} = render( <FirstApp title={title} /> );
 
-        expect(container).toMatchSnapshot();
+        expect(getByText(title)).toBeTruthy();
+
+        const h1 = container.querySelector('h1');
+        epect(h1.innerHTML).toContain(title);
+
 
     });
 
